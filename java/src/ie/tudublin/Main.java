@@ -2,34 +2,38 @@
 // Packages must match the folder structure
 package ie.tudublin;
 
-public class Main
-{
-	public void doDogStuff()
-	{
-		// Create a new Dog called Misty
-		// Call the constructor
-		Dog misty = new Dog("Misty");
-		misty.speak();
+public class Main {
+    public void doDogStuff() {
+        // Create a new Dog called Misty
+        // Call the constructor
+        Dog misty = new Dog("Misty");
+        misty.speak();
 
         Dog lucy = new Dog("Lucy");
-		lucy.speak();
-	}
+        lucy.speak();
+    }
 
-	public void doCatStuff()
-	{
-		// Put your code here
-		System.out.println("cats are from space");
-	}
-	
-	public static void main(String[] args)
-	{
-		System.out.println("Hello world");
-		
-		Main m = new Main();
+    public void doCatStuff() {
+        // Put your code here
+        System.out.println("cats are from space");
+    }
 
-		m.doDogStuff();
+    public static void main(String[] args) {
+        System.out.println("Hello world");
 
-		m.doCatStuff();
-	}
-	
-}
+        Main m = new Main();
+
+        m.doDogStuff();
+
+        m.doCatStuff();
+
+        // Create a new Cat called Ginger.
+        // Call the constructor.
+        Cat ginger = new Cat("Ginger");
+
+        // Kill the cat.
+        while (!ginger.kill())
+            ;
+    } // end function main
+
+} // end class Main
