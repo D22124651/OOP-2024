@@ -3,6 +3,12 @@
 package ie.tudublin;
 
 public class Main {
+
+    public void helloProcessing() {
+        String[] a = { "MAIN" };
+        processing.core.PApplet.runSketch(a, new HelloProcessing());
+    }
+
     public void doDogStuff() {
         // Create a new Dog called Misty
         // Call the constructor
@@ -23,17 +29,21 @@ public class Main {
 
         Main m = new Main();
 
+    public void doCatStuff() {
+        // Put your code here
+        System.out.println("cats are from space");
+    }
+
+    public static void main(String[] args) {
+        System.out.println("Hello world");
+
+        Main m = new Main();
+
         m.doDogStuff();
 
         m.doCatStuff();
 
-        // Create a new Cat called Ginger.
-        // Call the constructor.
-        Cat ginger = new Cat("Ginger");
+        m.helloProcessing();
+    }
 
-        // Kill the cat.
-        while (!ginger.kill())
-            ;
-    } // end function main
-
-} // end class Main
+}
