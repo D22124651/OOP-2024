@@ -29,16 +29,6 @@ public class Main {
 
         Main m = new Main();
 
-    public void doCatStuff() {
-        // Put your code here
-        System.out.println("cats are from space");
-    }
-
-    public static void main(String[] args) {
-        System.out.println("Hello world");
-
-        Main m = new Main();
-
         m.doDogStuff();
 
         m.doCatStuff();
